@@ -52,10 +52,10 @@ header{
 
 
 .title h1 {
-
-    font-size: 18px;
+    cursor: pointer;
+    font-size: 24px;
     font-weight: 600;
-    color: #c4a500;
+    color:  #00a86a;
     line-height: 56px;
     text-transform: uppercase;
 }
@@ -81,9 +81,9 @@ nav ul li {
 }
 
 nav ul li a {
-    
+    cursor: pointer;
     font-size: 17px;
-    color: #ffff;
+    color: white;
     font-weight: 600;
     text-decoration: none;
     letter-spacing: .2px;
@@ -100,18 +100,16 @@ a {
 }
 
 nav ul li:last-child a{
-    padding: 12px;
-    background-color: rgba(197, 197, 197, 0.3);
+
+    padding: 12px 20px;
+    background-color: #00a86ab0;
     border-radius: 8px;
 }
 
-nav ul li a:hover {
-    
-    color: #c4a500;
-}
+
 
 nav ul li + li {
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .hero-banner {
@@ -134,26 +132,6 @@ nav ul li + li {
     
 }
 
-.hero-banner h2{
-    
-    
-    font-weight: 300;
-    color: #ffff;
-}
-
-.hero-banner h3{
-    margin-bottom: 30px;
-  
-    font-weight: 300;
-    color:#ffff;
-}
-
-.hero-banner p{
-    margin-top: 24px;
- 
-    font-weight: 400;
-    color: white;
-}
 
 .tint {
     width: 100%;
@@ -213,7 +191,7 @@ nav ul li + li {
     margin-left: 25px;
 }
 .banner-footer ul li a i {
-    font-size: 25px;
+    font-size: 40px;
     color: white;
     cursor: pointer;
 }
@@ -277,12 +255,16 @@ nav ul li + li {
     justify-content: center;
 }
 #center div {
-    width: 400px;
+    width: 600px;
     height: 50px;
     text-align: center;
+    
 }
 #center div h2 {
-    font-size: 40px;
+    
+    font-weight: 300;
+    margin: 10px 0;
+    font-size: 60px;
 }
 #center div p {
     font-size: 20px;
@@ -298,7 +280,6 @@ nav ul li + li {
 #aboutMe {
     margin: 0 auto;
     margin-top: 50px;
-
     width: 80%;
     height: 300px;
     text-align: center;
@@ -308,8 +289,9 @@ nav ul li + li {
 }
 
 #aboutMe p{
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: left;
+    font-size: 18px;
 }
 footer{
  
@@ -333,13 +315,13 @@ footer div {
     font-size: 16px;
     font-weight: 400;
     color: #000000;
-    line-height: 168px;
+    line-height: 88px;
     text-transform: uppercase;
 }
 
 .navfoot {
     text-align: left;
-    height: 168px;
+    height: 88px;
 }
 
 .navfoot ul{
@@ -350,7 +332,7 @@ footer div {
 
 .navfoot ul li{
     display: inline;
-    line-height: 190px;
+    line-height: 110px;
     cursor: default;
 }
 
