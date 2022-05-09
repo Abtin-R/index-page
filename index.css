@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    -webkit-transition-duration: 0;
+            transition-duration: 0;
+    
+}
+
+p, a, li, input, textarea, div, span, h1, h2, h3, h4, h5, h6, table{
+    font-family: Raleway, Helvetica, sans-serif;
+    -webkit-font-smoothing: anrialised;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    overflow: hidden;
+    height: 56px;
+}
+
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.title h1 {
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #c4a500;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+nav {
+    text-align: right;
+    height: 56px;
+
+}
+
+nav ul{
+  
+    list-style: none;
+    font-size: 0;
+
+}
+
+nav ul li {
+  
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    
+    font-size: 17px;
+    color: #ffff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.title a h1:hover {
+    color: #ffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul li:last-child a{
+    padding: 12px;
+    background-color: rgba(197, 197, 197, 0.3);
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    
+    color: #c4a500;
+}
+
+nav ul li + li {
+    margin-left: 25px;
+}
+
+.hero-banner {
+   
+    color: white;
+    height: 100vh;
+    background: black url("back.jpg") center center / cover no-repeat;
+  
+}
+
+.banner-center{
+    
+    height: calc(100vh - 120px - 50px);
+    width: 600px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+}
+
+.hero-banner h2{
+    
+    
+    font-weight: 300;
+    color: #ffff;
+}
+
+.hero-banner h3{
+    margin-bottom: 30px;
+  
+    font-weight: 300;
+    color:#ffff;
+}
+
+.hero-banner p{
+    margin-top: 24px;
+ 
+    font-weight: 400;
+    color: white;
+}
+
+.tint {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 555;
+}
+.overlay {
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 555;
+}
+
+
+/*----------------------------------*/ 
+/* hero banner               End            */ 
+/*----------------------------------*/ 
+
+.banner-footer {
+    width: 100%;
+    text-align: center;
+    height: 120px;
+}
+.banner-footer ul{
+    list-style: none;
+    font-size: 0;
+
+}
+
+.banner-footer ul li {
+ 
+    color: white;
+    display: inline;
+    line-height: 120px;
+    cursor: default;
+}
+
+  
+
+.banner-footer ul li a {
+    
+   
+    text-decoration: none;
+   
+    text-transform: none;
+    cursor: pointer;
+}
+
+
+.banner-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.banner-footer ul li + li {
+    margin-left: 25px;
+}
+.banner-footer ul li a i {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.button {
+    transition: ease-in-out .25s;
+    width: 100px;
+    margin: 0 auto;
+    text-decoration: none;
+    border: 4px solid #ffff;
+    background-color: #c4a500; 
+    color: #ffff;
+    padding: 12px 34px; 
+    border-radius: 64px;
+    cursor: pointer;
+}
+
+.button:hover {
+    border-color: #c4a500;
+    background-color:  #ffff;
+    color:  #c4a500;
+}
+
+.bounce {
+        
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    animation: bounce 2.5s ease-in-out infinite .25s;
+
+}
+
+@keyframes bounce {
+
+    0%, 50%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-15px);
+    }
+    75% {
+        transform: translateY(-15px);
+    }
+
+}
+
+#full {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#center {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 56px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
