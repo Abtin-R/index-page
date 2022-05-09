@@ -111,7 +111,7 @@ nav ul li a:hover {
 }
 
 nav ul li + li {
-    margin-left: 25px;
+    margin-left: 60px;
 }
 
 .hero-banner {
@@ -274,6 +274,12 @@ nav ul li + li {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#center div {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+
 }
 #bottom {
     position: fixed;
